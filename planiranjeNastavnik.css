@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+
+.nastavnik-form {
+    width: 450px;
+    height: 370px;
+    margin: auto;
+    padding: 30px 35px;
+    background-color: #281d6e;
+    border: 5px #ffdf12 solid;   
+    border-radius: 20px;   
+}
+
+.nastavnik-form div {
+    margin-bottom: 25px;
+}
+
+.nastavnik-form label {
+    display: inline-block;
+    width: 190px;
+    margin-right: 16px;
+    font-family: 'Zilla Slab', serif;
+    font-size: 25px;
+    color:#e7e6ed;
+    letter-spacing: 0.4px;
+}
+
+.nastavnik-form input, .nastavnik-form select{
+    width: 220px;
+    height: 40px;
+    padding: 5px;
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #82720a;
+    border-radius: 10px;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+.nastavnik-form input:focus, .nastavnik-form select:focus {
+    outline: none;
+    box-shadow: 0 0 1pt 2pt #c4ae1d;
+}
+
+.nastavnik-form input[type="submit"] {
+    display: block;
+    width: 260px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #ffcf0f;
+    color: #4f4314;
+    letter-spacing: 1px;
+}
+
+.nastavnik-form input[type="submit"]:hover {
+    background-color: #d4ae15;
+    color: #281d6e;
+    cursor: pointer;
+}
+
+@media (max-height: 600px) {
+    .nastavnik-form  {
+        margin-top: 30px;
+    }
+}
+
+@media (max-height: 550px) {
+    main {
+        padding-bottom: 40px;  
+    }
+}
+
+@media (max-width: 510px) {
+    .nastavnik-form {
+        height: 320px;
+        width: 340px;
+    }
+    .nastavnik-form label  {
+        width: 140px;
+        font-size: 18px;
+    }
+
+    .nastavnik-form input, .nastavnik-form select{
+        width: 170px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .nastavnik-form input[type="submit"] {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 410px) {
+    .nastavnik-form div {
+        text-align: center; 
+        margin-bottom: 7px;
+    }
+    
+    .nastavnik-form label {
+    margin-bottom: 5px;
+    }
+
+    .nastavnik-form {
+        height: 370px;
+    }
+}
+
+@media (max-width: 345px) {
+    .nastavnik-form {
+        padding: 25px 5px;
+    }
+    
+.nastavnik-form input[type="submit"] {
+    width:200px
+}
+}

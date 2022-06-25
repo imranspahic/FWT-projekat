@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="raspored.css">
+    <link rel="stylesheet" href="navigacija.css">
+
+    <title>Raspored</title>
+</head>
+
+<body>
+    <header class="navigacija">
+        <div id=logo>
+            <img src="logo.png" alt="ETF">
+        </div>
+        <div id="meni">
+            <ul>
+                <li><a href="#">Raspored</a></li>
+                <li><a href="planiranjeNastavnik.html">Nastavnik</a></li>
+                <li><a href="podaciStudent.html">Student</a></li>
+                <li><a href="posjecenost.html">Posjećenost</a></li>
+                <li><a href="obavijesti.html">Obavijesti</a></li>
+            </ul>
+        </div>
+   
+    </header>
+    <main>
+
+        <div class="col-md-2 col-sm-10 form-group filtriraj-forma">
+            <label class="font-weight-bold" for="filtriraj-naziv">Naziv predmeta</label>
+            <input type="text" class="form-control" id="filtriraj-naziv" placeholder="Unesite naziv predmeta">
+
+            <label class="font-weight-bold" for="filtriraj-tip-predmeta">Tip predmeta</label>
+            <input type="text" class="form-control" id="filtriraj-tip-predmeta" placeholder="Unesite tip predmeta">
+
+            <label class="font-weight-bold" for="filtriraj-vrijeme-trajanja">Vrijeme trajanja</label>
+            <input type="number" class="form-control" id="filtriraj-vrijeme-trajanja" placeholder="Unesite vrijeme trajanja">
+
+            <label class="font-weight-bold" for="filtriraj-dan">Dan</label>
+            <input type="text" class="form-control" id="filtriraj-dan" placeholder="Unesite dan">
+            
+            <button type="button" class="btn btn-primary dugme-filtriraj btn-block" id="filtriraj">FILTRIRAJ</button>
+
+        </div>
+
+        <div class="raspored-okvir">
+            <div class="satnica">
+                <div class="satnica-margina-velika"></div>
+                <p>8:00</p>
+                <div class="satnica-margina-srednja"></div>
+                <div class="satnica-margina-responsive-mala"></div>
+                <p>10:00</p>
+                <div class="satnica-margina-srednja"></div>
+                <div class="satnica-margina-responsive-mala"></div>
+                <p>12:00</p>
+                <div class="satnica-margina-velika"></div>
+                <div class="satnica-margina-mala"></div>
+                <p>15:00</p>
+                <div class="satnica-margina-srednja"></div>
+                <div class="satnica-margina-responsive-mala"></div>
+                <div class="satnica-margina-responsive-manja"></div>
+                <p>17:00</p>
+                <div class="satnica-margina-srednja"></div>
+                <div class="satnica-margina-responsive-mala"></div>
+                <div class="satnica-margina-responsive-manja"></div>
+                <p>19:00</p>
+            </div>
+
+            <table>
+                <tr>
+                    <th class="trenutni-dan">
+                        Ponedjeljak
+                    </th>
+                    <td></td>
+                    <td></td>
+                    <td colspan='6' class="popunjeno">
+                        <h3>WT</h3>
+                        <p>predavanje</p>
+                    </td>
+                    <td colspan='3' class="popunjeno desna-ivica">
+                        <h3>WT</h3>
+                        <p>vježbe</p>
+                    </td>
+                    <td></td>
+                    <td colspan="6" class="popunjeno">
+                        <h3>RMA</h3>
+                        <p>predavanje</p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="desna-ivica"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>
+                        Utorak
+                    </th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="3" class="popunjeno lijeva-ivica">
+                        <h3>RMA</h3>
+                        <p>vježbe</p>
+                    </td>
+                    <td colspan="4" class="popunjeno">
+                        <h3>DM</h3>
+                        <p>tutorijal</p>
+                    </td>
+                    <td colspan="6" class="popunjeno desna-ivica">
+                        <h3>DM</h3>
+                        <p>predavanje</p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>
+                        Srijeda
+                    </th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="6" class="popunjeno">
+                        <h3>OI</h3>
+                        <p>Predavanje</p>
+                    </td>
+                    <td colspan="6"></td>
+                    <td></td>
+                    <td class="desna-ivica"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>
+                        Četvrtak
+                    </th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="desna-ivica"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <th>
+                        Petak
+                    </th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="desna-ivica"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="filtriraj.js"></script>
+    <script src="raspored.js"></script>
+</body>
+
+</html>

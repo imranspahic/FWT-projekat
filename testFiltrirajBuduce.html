@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8" />
+   <title>Testovi</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+   <link rel="stylesheet" href="raspored.css">
+ </head>
+ <body>
+
+   <div id="mocha"></div>
+   <div class="raspored-okvir">
+    <div class="satnica">
+        <div class="satnica-margina-velika"></div>
+        <p>8:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <p>10:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <p>12:00</p>
+        <div class="satnica-margina-velika"></div>
+        <div class="satnica-margina-mala"></div>
+        <p>15:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <div class="satnica-margina-responsive-manja"></div>
+        <p>17:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <div class="satnica-margina-responsive-manja"></div>
+        <p>19:00</p>
+    </div>
+
+    <table>
+        <tr>
+            <th class="trenutni-dan">
+                Ponedjeljak
+            </th>
+            <td></td>
+            <td></td>
+            <td colspan='6' class="popunjeno">
+                <h3>WT</h3>
+                <p>predavanje</p>
+            </td>
+            <td colspan='3' class="popunjeno desna-ivica">
+                <h3>WT</h3>
+                <p>vježbe</p>
+            </td>
+            <td></td>
+            <td colspan="6" class="popunjeno">
+                <h3>RMA</h3>
+                <p>predavanje</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Utorak
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3" class="popunjeno lijeva-ivica">
+                <h3>RMA</h3>
+                <p>vježbe</p>
+            </td>
+            <td colspan="4" class="popunjeno">
+                <h3>DM</h3>
+                <p>tutorijal</p>
+            </td>
+            <td colspan="6" class="popunjeno desna-ivica">
+                <h3>DM</h3>
+                <p>predavanje</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Srijeda
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="6" class="popunjeno">
+                <h3>OI</h3>
+                <p>Predavanje</p>
+            </td>
+            <td colspan="6"></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Četvrtak
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <th>
+                Petak
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+<div class="raspored-okvir">
+    <div class="satnica">
+        <div class="satnica-margina-velika"></div>
+        <p>8:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <p>10:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <p>12:00</p>
+        <div class="satnica-margina-velika"></div>
+        <div class="satnica-margina-mala"></div>
+        <p>15:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <div class="satnica-margina-responsive-manja"></div>
+        <p>17:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <div class="satnica-margina-responsive-manja"></div>
+        <p>19:00</p>
+    </div>
+
+    <table>
+        <tr>
+            <th class="trenutni-dan">
+                Ponedjeljak
+            </th>
+            <td></td>
+            <td></td>
+            <td colspan='6' class="popunjeno">
+                <h3>UUP</h3>
+                <p>predavanje</p>
+            </td>
+            <td colspan='3' class="popunjeno desna-ivica">
+                <h3>UUB</h3>
+                <p>vježbe</p>
+            </td>
+            <td></td>
+            <td colspan="6" class="popunjeno">
+                <h3>UUB</h3>
+                <p>predavanje</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Utorak
+            </th>
+            <td></td>
+            <td></td>
+            <td colspan="3" class="popunjeno lijeva-ivica">
+                <h3>RP</h3>
+                <p>vježbe</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td colspan="4" class="popunjeno">
+                <h3>FWT</h3>
+                <p>vježbe</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        
+           
+            <td colspan="6" class="popunjeno desna-ivica">
+                <h3>DM</h3>
+                <p>predavanje</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Srijeda
+            </th>
+            <td colspan="6" class="popunjeno">
+                <h3>FWT</h3>
+                <p>predavanje</p>
+            </td>
+            <td colspan="6" class="popunjeno">
+                <h3>UUP</h3>
+                <p>predavanje</p>
+            </td>
+            <td></td>
+            <td></td>
+          
+            <td colspan="6"></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Četvrtak
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="6" class="popunjeno lijeva-ivica desna-ivica">
+                <h3>MUR1</h3>
+                <p>predavanje</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3" class="popunjeno desna-ivica">
+                <h3>MUR1</h3>
+                <p>tutorijal</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <th>
+                Petak
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+<div class="raspored-okvir">
+    <div class="satnica">
+        <div class="satnica-margina-velika"></div>
+        <p>8:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <p>10:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <p>12:00</p>
+        <div class="satnica-margina-velika"></div>
+        <div class="satnica-margina-mala"></div>
+        <p>15:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <div class="satnica-margina-responsive-manja"></div>
+        <p>17:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <div class="satnica-margina-responsive-manja"></div>
+        <p>19:00</p>
+    </div>
+
+    <table>
+        <tr>
+            <th class="trenutni-dan">
+                Ponedjeljak
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan='6' class="popunjeno">
+                <h3>IM1</h3>
+                <p>predavanje</p>
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td colspan='3' class="popunjeno desna-ivica">
+                <h3>IM1</h3>
+                <p>vježbe</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Utorak
+            </th>
+            <td colspan="2" class="popunjeno lijeva-ivica">
+                <h3>FWT</h3>
+                <p>tutorijal</p>
+            </td>
+            <td colspan="8" class="popunjeno lijeva-ivica">
+                <h3>MUR2</h3>
+                <p>predavanje</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="6" class="popunjeno desna-ivica">
+                <h3>BWT</h3>
+                <p>predavanje</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Srijeda
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="6" class="popunjeno">
+                <h3>OI</h3>
+                <p>Predavanje</p>
+            </td>
+            <td colspan="6"></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Četvrtak
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <th>
+                Petak
+            </th>
+            <td></td>
+            <td></td>
+            <td colspan="3" class="popunjeno desna-ivica">
+                <h3>UUB</h3>
+                <p>vježbe</p>
+            </td>
+           
+            <td></td>
+            <td></td>
+            <td colspan="3" class="popunjeno lijeva-ivica">
+                <h3>MUR1</h3>
+                <p>tutorijal</p>
+            </td>
+            <td colspan="6" class="popunjeno">
+                <h3>RP</h3>
+                <p>predavanje</p>
+            </td>
+           
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+<div class="raspored-okvir">
+    <div class="satnica">
+        <div class="satnica-margina-velika"></div>
+        <p>8:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <p>10:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <p>12:00</p>
+        <div class="satnica-margina-velika"></div>
+        <div class="satnica-margina-mala"></div>
+        <p>15:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <div class="satnica-margina-responsive-manja"></div>
+        <p>17:00</p>
+        <div class="satnica-margina-srednja"></div>
+        <div class="satnica-margina-responsive-mala"></div>
+        <div class="satnica-margina-responsive-manja"></div>
+        <p>19:00</p>
+    </div>
+
+    <table>
+        <tr>
+            <th class="trenutni-dan">
+                Ponedjeljak
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Utorak
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="6" class="popunjeno lijeva-ivica">
+                <h3>FWT</h3>
+                <p>predavanje</p>
+            </td>
+            
+            <td colspan="4" class="popunjeno">
+                <h3>DM</h3>
+                <p>tutorijal</p>
+            </td>
+            <td colspan="6" class="popunjeno desna-ivica">
+                <h3>DM</h3>
+                <p>predavanje</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Srijeda
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="6" class="popunjeno">
+                <h3>UUB</h3>
+                <p>predavanje</p>
+            </td>
+            <td colspan="6" class="popunjeno">
+                <h3>BWT</h3>
+                <p>predavanje</p>
+            </td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                Četvrtak
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3" class="popunjeno">
+                <h3>IM1</h3>
+                <p>vježbe</p>
+            </td>
+            <td colspan="4" class="popunjeno">
+                <h3>IM2</h3>
+                <p>vježbe</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="5" class="popunjeno desna-ivica">
+                <h3>MUR1</h3>
+                <p>tutorijal</p>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Petak
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="desna-ivica"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+ 
+   <script src="https://unpkg.com/chai/chai.js"></script>
+   <script src="https://unpkg.com/mocha/mocha.js"></script>
+   <script class="mocha-init">
+     mocha.setup('bdd');
+     mocha.checkLeaks();
+   </script>
+   <script src="filtriraj.js"></script>
+   <script src="testFiltrirajBuduce.js"></script>
+   <script class="mocha-exec">
+     mocha.run();
+   </script>
+ </body>
+</html>

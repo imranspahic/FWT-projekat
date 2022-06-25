@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planiranjeNastavnik.css">
+    <link rel="stylesheet" href="navigacija.css">
+    <title>Nastavnik</title>
+</head>
+
+<body>
+    <header class="navigacija">
+        <div id=logo>
+            <img src="logo.png" alt="ETF">
+        </div>
+        <div id="meni">
+            <ul>
+                <li><a href="raspored.html">Raspored</a></li>
+                <li><a href="#">Nastavnik</a></li>
+                <li><a href="podaciStudent.html">Student</a></li>
+                <li><a href="posjecenost.html">Posjećenost</a></li>
+                <li><a href="obavijesti.html">Obavijesti</a></li>
+            </ul>
+        </div>
+   
+    </header>
+
+    <main>
+        <form class="nastavnik-form">
+            <div>
+                <label for="predmet">Naziv predmeta:</label>
+                <input type="text" name="predmet" id="predmet">
+            </div>
+            <div>
+                <label for="tip">Tip:</label>
+                <select name="tip" id="tip">
+                    <option value="predavanje">Predavanje</option>
+                    <option value="vježbe">Vježbe</option>
+                </select>
+            </div>
+    
+            <div>
+                <label for="vrijemeP">Vrijeme početka:</label>
+                <input type="time" name="vrijemeP" id="vrijemeP">
+            </div>
+    
+            <div>
+                <label for="vrijemeK">Vrijeme kraja:</label>
+                <input type="time" name="vrijemeK" id="vrijemeK">
+            </div>
+    
+            <div>
+                <label for="dan">Dan u sedmici:</label>
+                <select name="dan" id="dan">
+                    <option value="pon">Ponedjeljak</option>
+                    <option value="uto">Utorak</option>
+                    <option value="sri">Srijeda</option>
+                    <option value="čet">Četvrtak</option>
+                    <option value="pet">Petak</option>
+                    <option value="sub">Subota</option>
+                    <option value="ned">Nedjelja</option>
+                </select>
+            </div>
+            <input type="submit" name="Sačuvaj" value="SAČUVAJ">
+        </form>
+    </main>
+    <script src="planiranjeNastavnik.js"></script>
+    <script src="validacija.js"></script>
+</body>
+</html>

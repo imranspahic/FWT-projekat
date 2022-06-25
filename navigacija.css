@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+.navigacija {
+    height: 80px;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    background-color: #22156e;
+    box-sizing: border-box;
+}
+
+#logo {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 0;
+}
+
+#logo img {
+    width: 64px;
+    height: 64px;
+}
+
+#meni {
+    flex-basis: 0;
+    flex-grow: 7;
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+#meni ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+#meni ul li {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+     color: #34363b;
+    display: inline-block;
+    list-style: none;
+}
+
+#meni ul li:not(:first-child) {
+    margin-left: 35px;
+}
+#meni ul li a {
+    color: #f7f5c8;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    font-size: 22px;
+    transition: 0.5s;
+    font-family: 'Zilla Slab', serif;
+}
+
+#meni ul li a:hover {
+    color: #ffcf0f;
+    border-bottom: 1px white solid;
+    transition: 0.5s;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 760px) {
+    #meni ul li a {
+        font-size: 17px;
+    }
+
+    #meni ul li:not(:first-child) {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navigacija {
+        flex-direction: column;
+        height: 115px;
+        padding: 0 10px;
+    }
+    #meni ul li a {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 470px) {
+    .navigacija {
+        flex-direction: column;
+        height: 120px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 267px) {
+    .navigacija {
+        height: 150px;
+    }
+}

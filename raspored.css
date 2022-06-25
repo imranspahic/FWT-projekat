@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    line-height: 1.20;
+   
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: visible;
+}
+
+.filtriraj-forma {
+    border: 1px solid #b7bdb9;
+    border-radius: 10px;
+    margin-left: 50px;
+    padding: 20px 40px 20px 15px;
+    box-shadow: 5px 5px 10px 5px #ebedec;
+}
+
+.filtriraj-forma input {
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.dugme-filtriraj {
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+}
+
+.raspored-okvir {
+    margin: auto;
+    width: 1010px;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 1010px;
+}
+
+th {
+    text-align: right;
+    border-right: 2px solid black;
+    font-family: 'Zilla Slab', serif;
+    letter-spacing: 2px;
+    font-size: 23px;
+    font-weight: 400;
+    padding-right: 15px;
+}
+
+td {
+    width: 30px;
+    height: 80px;
+    background-color: #e6e6e6;
+    padding-top: 5px;
+}
+
+.popunjeno {
+    background-color: #dee6ef;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid black;
+}
+
+.popunjeno h3,p {
+    font-family: 'Zilla Slab', serif;
+    margin: 0;
+}
+
+.popunjeno h3 {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.popunjeno p {
+    font-size: 17px;
+}
+
+
+td:nth-child(even):not(.popunjeno), .desna-ivica {
+    border-right: 2px dashed black;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid black;
+}
+
+td:nth-child(odd):not(.popunjeno):not(.desna-ivica) {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.lijeva-ivica {
+    border-left: 2px dashed black;
+}
+
+.trenutni-dan{
+    font-weight: 600;
+}
+
+.satnica {
+    display: inline-block;
+    width: 1010px;
+    padding-left: 25px;
+}
+
+.satnica p {
+    display: inline-block;
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+}
+
+.satnica-margina-velika {
+    display: inline-block;
+    width: 115px;
+}
+
+.satnica-margina-srednja {
+    display: inline-block;
+    width: 70px;
+}
+
+.satnica-margina-mala {
+    display: inline-block;
+    width: 30px;
+}
+
+.satnica-margina-responsive-mala{
+    display: inline-block;
+}
+
+.satnica-margina-responsive-manja {
+    display: inline-block;
+}
+
+@media (max-width:1010px) {
+    .raspored-okvir {
+     width: 100%;
+    }
+
+    table {
+        width: 800px;   
+        margin: auto;
+    }
+
+    .satnica {
+        width: 780px;
+        display: block;
+        margin: auto;
+    }
+    th, .popunjeno h3, .popunjeno p {
+        font-size: 16px;
+    }
+
+
+    .satnica-margina-velika {
+        width: 73px;
+    }  
+    .satnica-margina-srednja {
+        width: 23px;
+    }    
+    .satnica-margina-mala {
+        width: 25px;
+    }
+    .satnica-margina-responsive-mala {
+        width: 22px;
+    }
+    .satnica-margina-responsive-manja {
+        width: 6px;
+    }
+}
+
+@media (max-height:600px) {
+    .raspored-okvir {
+        margin-top: 40px;
+    }
+    main {
+        padding-bottom: 40px;
+    }
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.obavijesti-flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.obavijest{
+    height: 130px;
+    width: 80%;
+    background-color: rgba(222, 230, 239, 1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.naslov {
+    margin: 0px 20px;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.vrijeme {
+    flex-grow: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 35px 5px 0px;
+}
+
+.naslov h3, .vrijeme p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(25, 84, 148, 1);
+    font-weight: 600;
+    display: inline;
+}
+
+.naslov h3 {
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+.vrijeme p {
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+
+.izbriši {
+    width: 40px;
+    height: 35px;
+    background-color: rgba(114, 159, 207,1);
+    border: 4px solid rgba(56, 104, 166,1);
+    border-radius: 15px;
+    position: absolute;
+    top: -10px;
+    text-align: center;
+    right: -10px;
+    z-index: 2;
+    box-shadow: -5px 5px 0px 1px white,
+                -5px -2px 0px 1px white,   
+                 2px 5px 0px 1px white;
+}
+
+.izbriši p{
+    display: inline-block;
+   color: rgba(56, 104, 166,1);
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 35px;
+    font-size: 30px;
+}
+
+.hover-okvir {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.obavijest:hover{
+    border: 4px solid rgba(25, 84, 148, 1);
+    cursor: pointer;
+}
+
+.obavijest:hover .naslov {
+    margin-top: -14px;
+}
+
+.obavijest:hover .vrijeme{
+    margin: -10px 31px -3px 0px;
+}
+
+.obavijest:hover .izbriši{
+    right: -14px;
+    top: -14px
+}
+
+.izbriši:hover{
+    background-color:rgba(56, 104, 166,1);
+    border: 2px solid white;
+    padding: 2px;
+}
+
+.izbriši:hover p {
+    color: white;
+}
+
+.izbriši:hover ~ .hover-okvir {
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    margin: -4px;
+    border: 5px solid rgba(222, 230, 239, 1);
+}
+
+
+/* Davanje fixirane širine je lošiji način,
+   već je flexbox optimizovan da bude responsive
+   Kad je fixno 500px onda se pojavi scroll horionzalno
+   i meni navigacije ne uzima svu širinu
+ */
+
+@media (max-width: 500px) {
+    .obavijest {
+        width: 500px;
+    }
+}
